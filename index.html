@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtHouseCinema - Search</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <span class="logo" title="Return to homepage">ArtHouseCinema</span>
+    </header>
+
+    <main>
+        <h1>NAVIGATE</h1>
+        <p>Browse and discover an incredible world of indie films, with great quality films!</p>
+
+        <div class="search-wrapper">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i> <span class="text">Search</span></label>
+            <input type="search" id="search" placeholder="Ex: comedy, Galatic Odyssey" data-search>
+        </div>
+    
+        <div class="movies-card" data-movies-card-container>
+            <template data-movies-template>
+                <div class="card">
+                        <div>
+                            <img loading="lazy" src="" alt="Movie image" data-image>
+                        </div>
+                        <div>
+                            <span class="category" data-category></span><br><br>
+                            <span class="date">2025</span>
+                            <div class="title" data-title></div>
+                            <button class="btn"><i class="fa-solid fa-circle-play"></i> Watch</button>
+                        </div>
+                </div>
+            </template>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="form-container">
+
+            <p>Our Newsletter</p>
+            <h1>Watch first</h1>
+
+            <form action="" method="post">
+
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="input-email" required>
+
+                <input type="submit" value="Sign now" class="btn-input">
+            </form>
+        </div>
+
+        <p class="p-footer">©2025 ArtHouseCinema. The cinema house</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* OVERRAL */
+* {
+    font-family: "Host Grotesk", sans-serif;
+}
+
+:root {
+    --mainColor: #0466C8;
+    --hover: #000000;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(to right, rgb(0, 8, 20), rgb(3, 30, 59));
+}
+
+/* HEADER */
+header {
+    padding: 2rem;
+}
+
+header .logo {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+header .logo:hover {
+    color: var(--mainColor);
+}
+
+.logo[title]:hover::after {
+    content: attr(title);
+    background-color: var(--mainColor);
+    padding: .2rem;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 1rem;
+    animation: opacity .8s ease-in-out;
+}
+
+::selection {
+    background-color: #fff;
+    color: #111;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: gray;
+}
+
+/* SEARCHBAR */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.search-wrapper label {
+    font-size: 1.2rem;
+}
+
+.search-wrapper input {
+    all: unset;
+    border-bottom: 2px solid var(--mainColor);
+    padding: .7rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 500px;
+    cursor: pointer;
+}
+
+input {
+    color: var(--mainColor);
+}
+
+/* CARDS MOVIES */
+.movies-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.card.hide {
+    display: none;
+}
+
+.card {
+    margin-bottom: 5rem;
+}
+
+.card .title {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card .category {
+    background-color: var(--mainColor);
+    padding: .4rem;
+    border-radius: 5px;
+    color: #111;
+    font-weight: 700;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.card button {
+    all: unset;
+    color: #111;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: .9rem;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.card button:hover {
+    background-color: var(--hover);
+    color: var(--mainColor);
+}
+
+/* FORM CONTAINER */
+.form-container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.form-container p {
+    color: gray;
+}
+
+.form-container h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.form-container .input-email {
+    all: unset;
+    border: 2px solid var(--mainColor);
+    border-radius: 5px;
+    padding: .8rem;
+    font-size: 1.2rem;
+    width: 350px;
+}
+
+.form-container .btn-input {
+    all: unset;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: .9rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.form-container .btn-input:hover {
+    background-color: var(--hover);
+    color: var(--mainColor);
+}
+
+/* FOOTER */
+footer .p-footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem;
+}

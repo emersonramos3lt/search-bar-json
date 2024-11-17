@@ -1,0 +1,52 @@
+[
+    {
+      "title": "The Shadow Within",
+      "category": "Horror",
+      "imagePath": "./images/img1.jpg"
+    },
+    {
+      "title": "Laughter Lane",
+      "category": "Comedy",
+      "imagePath": "./images/img2.jpg"
+    },
+    {
+      "title": "Galactic Odyssey",
+      "category": "Science Fiction",
+      "imagePath": "./images/img3.jpg"
+    },
+    {
+      "title": "Heartstrings",
+      "category": "Romance",
+      "imagePath": "./images/img4.jpg"
+    },
+    {
+      "title": "Mystic Chronicles",
+      "category": "Fantasy",
+      "imagePath": "./images/img5.jpg"
+    },
+    {
+      "title": "Edge of Justice",
+      "category": "Action",
+      "imagePath": "./images/img6.jpg"
+    },
+    {
+      "title": "Beneath the Surface",
+      "category": "Thriller",
+      "imagePath": "./images/img7.jpg"
+    },
+    {
+      "title": "Echoes of the Past",
+      "category": "Drama",
+      "imagePath": "./images/img8.jpg"
+    },
+    {
+      "title": "Laugh or Cry",
+      "category": "Comedy-Drama",
+      "imagePath": "./images/img9.jpg"
+    },
+    {
+      "title": "Frozen Eternity",
+      "category": "Adventure",
+      "imagePath": "./images/img10.jpg"
+    }
+  ]  
