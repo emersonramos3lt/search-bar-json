@@ -30,34 +30,9 @@ header .logo:hover {
     color: var(--mainColor);
 }
 
-.logo[title]:hover::after {
-    content: attr(title);
-    background-color: var(--mainColor);
-    padding: .2rem;
-    border-radius: 4px;
-    color: #000000;
-    font-size: 1rem;
-    margin-left: 1rem;
-    animation: opacity .8s ease-in-out;
-}
-
 ::selection {
     background-color: #fff;
     color: #111;
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: .5;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* MAIN */
