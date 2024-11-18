@@ -84,7 +84,7 @@ input {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .card.hide {
